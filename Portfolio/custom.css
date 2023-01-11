@@ -1,0 +1,433 @@
+body {
+    background-color: rgb(33, 34, 36);
+}
+
+.logo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    color: white;
+    font-size: 24px;
+    
+}
+
+.navbar-nav a.nav-link:last-of-type {
+    padding-right: 0;
+    
+}
+
+.navbar-nav a.nav-link {
+    margin-right: 20px;
+    color: white;
+}
+.header-container {
+    position: relative;
+    height: 10px;
+}
+
+.site-content {
+    padding-top: 80px;
+    
+}
+
+.about-container {
+    padding-top: 80px;
+    
+}
+
+.portfolio-container {
+    padding-top: 80px;
+    
+}
+
+.contact-container {
+    padding-top: 80px;
+    
+}
+
+.masthead {
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 10px;
+    position: relative;
+    border-top: solid 1px rgb(0,0,0,0.4);
+    
+}
+
+.black-overlay {
+    display: webkit-flex;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+.content-box {
+    margin-left: 50px;
+    margin-right: 900px;
+    color: white;
+    font-size: 80px;
+}
+
+.singleCol {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.portrait-image {
+    float: left;
+    max-width: 200px;
+    margin: 5px 15px 15px 0px;
+}
+
+footer {
+    background-color: grey;
+    padding: 5rem 0rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+
+.card7 {
+    margin-left: 56px;
+    margin-bottom: 20px;
+}
+
+.card7-img-top {
+    position: relative;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.card7-text {
+    position: absolute;
+    bottom: 10px;
+    top: 15px;
+    background-color: transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+    display: inline-block;
+    right: 30px;
+}
+
+.card7-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.card7-content {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.cardnav7 button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+    margin-top: 55px;
+}
+
+.card6 {
+    margin-left: 75px;
+    margin-bottom: 20px;
+
+}
+
+.card6-img-top {
+    position: relative;
+    color: black;
+}
+
+.card6-text {
+    position: absolute;
+    bottom: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+}
+
+.card6-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.card6-content {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.cardnav6 button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+    margin-top: 65px;
+}
+
+.card5 {
+    margin-left: 75px;
+    margin-bottom: 20px;
+
+}
+
+.card5-img-top {
+    position: relative;
+    color: black;
+}
+
+.card5-text {
+    position: absolute;
+    bottom: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+}
+
+.card5-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.card5-content {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.cardnav5 button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.card4 {
+    margin-left: 56px;
+    margin-bottom: 20px;
+}
+
+.card4-img-top {
+    position: relative;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.card4-text {
+    position: absolute;
+    bottom: 10px;
+    top: 15px;
+    background-color: transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+    display: inline-block;
+    right: 30px;
+}
+
+.card4-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card4-content {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.cardnav4 button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+    margin-top: 60px;
+}
+
+.card3 {
+    margin-left: 56px;
+    margin-bottom: 20px;
+}
+
+.card3-img-top {
+    position: relative;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.card3-text {
+    position: absolute;
+    bottom: 10px;
+    top: 15px;
+    background-color: transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+    display: inline-block;
+    right: 30px;
+}
+
+.card3-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card3-content {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.cardnav3 button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+    margin-top: 60px;
+}
+
+.card2 {
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+
+.card2-img-top {
+    position: relative;
+    color: black;
+}
+
+.card2-text {
+    position: absolute;
+    bottom: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+}
+
+.card2-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.card2-content {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.cardnav2 button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.card1 {
+    margin-left: 75px;
+    margin-bottom: 20px;
+
+}
+
+.card1-img-top {
+    position: relative;
+    color: black;
+}
+
+.card1-text {
+    position: absolute;
+    bottom: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+}
+.card1-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    margin-top: 16px;
+    
+}
+
+.card1-content {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+
+.cardnav1 button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
