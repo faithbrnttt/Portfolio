@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+/* SCSS HEX */
+$saffron: #e3b505ff;
+$paynesgray: #4f6d7aff;
+$verdigris: #56a3a6ff;
+$yinmnblue: #345995ff;
+$razzmatazz: #e40066ff;
+$mint: #03cea4ff;
+$tomato: #fb4d3dff;
+$cool: 	#36454F;
+$lightgray: #bababa;
+
+/* FONTS */
+$lilita: 'Lilita One', cursive;
+$gruppo: 'Gruppo', cursive;
+$fira: 'Fira Mono', monospace;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $gruppo;
+}
+
+
+body {
+    background-color:rgb(49, 49, 49);
+    overflow-x:hidden;
+}
+
+
+header {
+    .navbar {
+        padding-right: 20rem;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        background:transparent;
+        z-index: 1;
+    
+        .container {
+            .navbar-nav {
+                font-size: 25px;
+                margin-left: 65%;
+                .nav-link {
+                    color: white;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    font-family: $fira;
+                }
+                .nav-link:hover {
+                    color: orange;
+
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    margin: 2rem;
+    position: relative;
+    border: 25px solid rgb(29, 29, 29);
+    border-radius: 25px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+    min-height: 75vh;
+    
+
+    .container {
+        padding-top: 15rem;
+        .title-container {
+          
+            @mixin glitchCopy { 
+                content: attr(data-text);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+        }
+        
+        .glitch {
+            position: relative;
+            color: white;
+            font-size: 5rem;
+            letter-spacing: .5em;
+            animation: glitch-skew 1s infinite linear alternate-reverse;
+            
+            &::before{
+                @include glitchCopy;
+                left: 2px;
+                text-shadow: -2px 0 #ff0000;
+                clip: rect(44px, 450px, 56px, 0);
+                animation: glitch-anim 5s infinite linear alternate-reverse;
+            }
+            
+            ::before,
+            &::after {
+                @include glitchCopy;
+                left: -2px;
+                text-shadow: -2px 0 #00ff11, 2px 2px #ff9100;
+                animation: glitch-anim2 1s infinite linear alternate-reverse;
+            }
+        }
+        
+        @keyframes glitch-anim {
+          $steps: 20;
+          @for $i from 0 through $steps {
+            #{percentage($i*(1/$steps))} {
+              clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                    transform: skew((random(100) / 100) + deg);
+            }
+          }
+        }
+        
+        @keyframes glitch-anim2 {
+          $steps: 20;
+          @for $i from 0 through $steps {
+            #{percentage($i*(1/$steps))} {
+              clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                    transform: skew((random(100) / 100) + deg);
+            }
+          }
+        }
+        
+        @keyframes glitch-skew {
+          $steps: 10;
+          @for $i from 0 through $steps {
+            #{percentage($i*(1/$steps))} {
+              transform: skew((random(10) - 5) + deg);
+            }
+          }
+        }
+     }
+     p {
+        font-size: 35px;
+        color: white;
+     }
+  }
+}
+
+.keys1 {
+    .btn-down {
+        position: absolute;
+        z-index: 1;
+        top: 71%;
+        left: 75%;
+        background-color: rgb(213, 213, 213);
+        border: .5px solid rgb(172, 172, 172);
+        border-radius: 15px;
+        box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
+    
+    }
+    
+    .btn-down:hover {
+        background-color: rgb(7, 204, 234);
+        border: .5px solid rgb(7, 144, 165);
+        box-shadow: 5px 5px 0px 0px rgba(7, 204, 234, 0.8);
+    }
+}
+
+.about {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+    background-color:rgb(49, 49, 49);
+    .container {
+        color: white;
+        padding-bottom: 12rem;
+
+        h1 {
+            font-family: $fira;
+            font-size: 80px;
+            color: rgb(190, 6, 98);
+        }
+
+        p {
+            font-size: 35px;
+        }
+    
+    }
+}
+
+.keys2 {
+    .btn-down {
+        position: absolute;
+        z-index: 1;
+        top: 160%;
+        left: 25%;
+        background-color: rgb(213, 213, 213);
+        border: .5px solid rgb(172, 172, 172);
+        border-radius: 15px;
+        box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
+    
+    }
+    
+    .btn-down:hover {
+        background-color: rgb(234, 128, 7);
+        border: .5px solid rgb(165, 86, 7);
+        box-shadow: 5px 5px 0px 0px rgba(234, 147, 7, 0.85);
+    }
+}
+
+.keys6 {
+    .btn-up {
+        position: absolute;
+        z-index: 1;
+        top:150%;
+        left: 30%;
+        background-color: rgb(213, 213, 213);
+        border: .5px solid rgb(172, 172, 172);
+        border-radius: 15px;
+        box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
+
+        .up {
+            transform: scaleY(-1);
+        }
+    }
+    
+    .btn-up:hover {
+        background-color: rgb(174, 7, 234);
+        border: .5px solid rgb(125, 7, 165);
+        box-shadow: 5px 5px 0px 0px rgba(174, 7, 234, 0.85);
+    }
+}
+
+.projects {
+    margin: 2rem;
+    border: 25px solid rgb(29, 29, 29);
+    border-radius: 25px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+    .title-container {
+          margin-top: 50px;
+        @mixin glitchCopy { 
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    }
+    
+    .glitch {
+        position: relative;
+        color: white;
+        font-size: 4rem;
+        letter-spacing: .5em;
+        animation: glitch-skew 1s infinite linear alternate-reverse;
+        
+        &::before{
+            @include glitchCopy;
+            left: 2px;
+            text-shadow: -2px 0 #ff0000;
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 5s infinite linear alternate-reverse;
+        }
+        
+        ::before,
+        &::after {
+            @include glitchCopy;
+            left: -2px;
+            text-shadow: -2px 0 #00ff11, 2px 2px #ff9100;
+            animation: glitch-anim2 1s infinite linear alternate-reverse;
+        }
+    }
+
+    @keyframes glitch-anim {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                transform: skew((random(100) / 100) + deg);
+        }
+      }
+    }
+    
+
+    @keyframes glitch-anim2 {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100)+px, 9999px, random(100)+px, 0);
+                transform: skew((random(100) / 100) + deg);
+        }
+      }
+    }
+    
+ 
+    @keyframes glitch-skew {
+      $steps: 10;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          transform: skew((random(10) - 5) + deg);
+        }
+      }
+    }
+ }
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);        
+        .card {
+            background-color:rgb(29, 29, 29);
+            color: white;
+            margin: 20px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .title {
+                padding: .5rem;
+              
+                h6 {
+                    font-size: 25px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            .desc {
+                padding: .5rem;
+             
+            }
+            
+            .ghub {
+                padding: 1rem;
+              
+                a {
+                    text-decoration: none;
+                    margin-top: 10px;
+                    i {
+                        color: rgb(0, 183, 255);
+                        margin-right: 20px;
+                        margin-left: 20px;
+                    }
+                
+                    i:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.keys3 {
+    .btn-down {
+        position: absolute;
+        z-index: 1;
+        top: 430%;
+        left: 33%;
+        background-color: rgb(213, 213, 213);
+        border: .5px solid rgb(172, 172, 172);
+        border-radius: 15px;
+        box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
+    
+    }
+    
+    .btn-down:hover {
+        background-color: rgb(234, 230, 7);
+        border: .5px solid rgb(183, 168, 7);
+        box-shadow: 5px 5px 0px 0px rgba(234, 230, 7, 0.85);
+    }
+}
+
+.keys5 {
+    .btn-up {
+        position: absolute;
+        z-index: 1;
+        top:420%;
+        left: 38%;
+        background-color: rgb(213, 213, 213);
+        border: .5px solid rgb(172, 172, 172);
+        border-radius: 15px;
+        box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
+
+        .up {
+            transform: scaleY(-1);
+        }
+    }
+    
+    .btn-up:hover {
+        background-color: rgb(174, 7, 234);
+        border: .5px solid rgb(125, 7, 165);
+        box-shadow: 5px 5px 0px 0px rgba(174, 7, 234, 0.85);
+    }
+}
+
+.contact {
+    min-height: 95vh;
+    background-color:rgb(49, 49, 49);
+    .title-container {
+        text-align: center;
+        h1 {
+            font-family: $fira;
+            font-size: 80px;
+            color: rgb(190, 6, 98);
+            padding-top: 7rem;
+        }
+    }
+    
+    .container {
+        border-radius: 5px;
+        background: transparent;
+        width: 800px;
+        form {
+            color: white;
+
+            label {
+                font-family: $gruppo;
+                font-weight: bold;
+                font-size: 30px;
+            }
+
+            input {
+                background-color:lightgrey;
+                border: 1px solid lightgrey;
+                width: 100%;
+                height: 50px;
+                border-radius: 10px;
+                padding: .5rem;
+            }
+            input:hover {
+                background-color: white;
+
+            }
+
+            textarea {
+                background-color: lightgrey;
+                width: 100%;
+                height: 100px;
+                border-radius: 10px;
+                padding: .5rem;
+            }
+
+            textarea:hover {
+                background-color: white;
+            }
+            
+            .btn {
+                width: 100%;
+                margin-top: 30px;
+                background-color: rgb(190, 6, 98);
+                color: white;
+                font-family: $gruppo;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .btn:hover {
+                box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.5);
+                
+
+            }
+
+        }
+    }
+}
+
+.keys4 {
+    .btn-up {
+        position: absolute;
+        z-index: 1;
+        top:530%;
+        left: 65%;
+        background-color: rgb(213, 213, 213);
+        border: .5px solid rgb(172, 172, 172);
+        border-radius: 15px;
+        box-shadow: 5px 5px 0px 0px rgba(255, 255, 255, 0.8);
+
+        .up {
+            transform: scaleY(-1);
+        }
+    }
+    
+    .btn-up:hover {
+        background-color: rgb(7, 204, 234);
+        border: .5px solid rgb(7, 144, 165);
+        box-shadow: 5px 5px 0px 0px rgba(7, 204, 234, 0.8);
+    }
+}
+
