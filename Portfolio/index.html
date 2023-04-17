@@ -36,7 +36,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero" id="hero" style="background: url(img/blackglitch.jpg);">
+      <section class="hero" id="hero">
         <div class="container">
           <div class="title-container">
             <h1 class="glitch" data-text="
@@ -45,39 +45,17 @@ Faith Burnett">Faith Burnett</h1>
           </div>
         </div>
       </section>
-      
-      <div class="keys1">
-        <div class="btn-down">
-          <a href="#about">
-            <img class="down" src="img/sortdown.png">
-          </a>
-        </div>
-      </div>
 
       <section class="about" id="about">
         <div class="container">
-          <h1>Welcome!</h1>
-          <p>My name is Faith and I am currently pursuing a Bachelor of Science in Computer Information Systems focusing on programming.  I have a passion for learning and solving problems.</p>
+          <div class="title-container">
+            <h1>Welcome!</h1>
+            <p>My name is Faith and I am currently pursuing a Bachelor of Science in Computer Information Systems focusing on programming.  I have a passion for learning and solving problems.</p>
+          </div>
         </div>
       </section>
 
-      <div class="keys2">
-        <div class="btn-down">
-          <a href="#projects">
-            <img class="down" src="img/sortdown.png">
-          </a>
-        </div>
-      </div>
-
-      <div class="keys6">
-        <div class="btn-up">
-          <a href="#hero">
-            <img class="up" src="img/sortdown.png">
-          </a>
-        </div>
-      </div>
-
-      <section class="projects" id="projects" style="background: url(img/blackglitch.jpg);">
+      <section class="projects" id="projects">
         <div class="title-container">
           <h1 class="glitch" data-text="
 Projects">Projects</h1>
@@ -132,18 +110,18 @@ Projects">Projects</h1>
             </div>
           </div>
           <div class="card">
-            <img src="img/stock.svg">
+            <img src="img/traffic.svg">
             <div class="title">
-              <h6>Stock Manager</h6>
+              <h6>Traffic Controller Prototype</h6>
             </div>
             <div class="desc">
-              <p>Buy, sell, and trade stocks.</p>
+              <p>Automated traffic lights with an emergency control switch and crosswalk.</p>
             </div>
             <div class="ghub">
-              <a href="https://github.com/faithbrnttt/StockAnalyzer">
+              <a href="https://github.com/faithbrnttt/TrafficLightSystem">
                 <i class="fa-brands fa-github fa-2xl"></i>
               </a>
-              <a href="powerpoints\Burnett Final Project CEIS150.pdf">
+              <a href="powerpoints\Burnett CEIS114 Final Project.pdf">
                 <i class="fa-solid fa-file-powerpoint fa-2xl"></i>
               </a>
             </div>
@@ -183,18 +161,18 @@ Projects">Projects</h1>
             </div>
           </div>
           <div class="card">
-            <img src="img/traffic.svg">
+            <img src="img/stock.svg">
             <div class="title">
-              <h6>Traffic Controller Prototype</h6>
+              <h6>Stock Manager</h6>
             </div>
             <div class="desc">
-              <p>Automated traffic lights with an emergency control switch and crosswalk.</p>
+              <p>Buy, sell, and trade stocks.</p>
             </div>
             <div class="ghub">
-              <a href="https://github.com/faithbrnttt/TrafficLightSystem">
+              <a href="https://github.com/faithbrnttt/StockAnalyzer">
                 <i class="fa-brands fa-github fa-2xl"></i>
               </a>
-              <a href="powerpoints\Burnett CEIS114 Final Project.pdf">
+              <a href="powerpoints\Burnett Final Project CEIS150.pdf">
                 <i class="fa-solid fa-file-powerpoint fa-2xl"></i>
               </a>
             </div>
@@ -202,49 +180,33 @@ Projects">Projects</h1>
         </div>
       </section>
 
-      <div class="keys3">
-        <div class="btn-down">
-          <a href="#contact">
-            <img class="down" src="img/sortdown.png">
-          </a>
-        </div>
-      </div>
-
-      <div class="keys5">
-        <div class="btn-up">
-          <a href="#hero">
-            <img class="up" src="img/sortdown.png">
-          </a>
-        </div>
-      </div>
-
       <section class="contact" id="contact">
         <div class="title-container">
           <h1>Let's Chat!</h1>
         </div>
         <div class="container">
           <form action="mailto:faithburnett@outlook.com" method="POST" enctype="multipart/form-data">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name">
 
-            <label for="email">Email address</label><br>
-            <input type="email" name="email" id="email">
-            
-            <label for="message">Message</label><br>
-            <textarea name="message" id="message" rows="3""></textarea>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              
+
+              <div class="form-group">
+                <label for="message">Message...</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
 
             <button type="submit" class="btn">Send</button>
           </form>
         </div>
       </section>
-
-      <div class="keys4">
-        <div class="btn-up">
-          <a href="#hero">
-            <img class="up" src="img/sortdown.png">
-          </a>
-        </div>
-      </div>
     </main>
     
 
