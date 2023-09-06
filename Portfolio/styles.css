@@ -221,7 +221,7 @@ footer {
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
         z-index: 1000;
-        background: rgb(15, 15, 15);
+        background-color: rgb(16, 16, 16);
 
         transform: translateX(-150%);
         transition: transform 450ms ease-in;
