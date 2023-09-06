@@ -56,6 +56,15 @@ body {
 .primary-navigation {
     padding: 2rem;
     list-style: none;
+
+    background: hsl(0 0% 0% / 0.5);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
 }
 
 .primary-navigation a {
@@ -192,13 +201,9 @@ footer {
 }
 
 .go-to-top i {
-    color: white;
-    font-size: 26px;
+    color: #FF5733;
+    font-size: 36px;
     margin-bottom: 30px;
-    margin-left: 6px;
-    border-radius: 50%;
-    background-color: #e50041;
-    text-align: center;
 }
 
 .button i {
