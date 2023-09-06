@@ -56,15 +56,6 @@ body {
 .primary-navigation {
     padding: 2rem;
     list-style: none;
-
-    background: hsl(0 0% 0% / 0.5);
-}
-
-@supports (backdrop-filter: blur(1rem)) {
-    .primary-navigation {
-        background: hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(1rem);
-    }
 }
 
 .primary-navigation a {
@@ -235,6 +226,13 @@ footer {
 
         transform: translateX(-150%);
         transition: transform 450ms ease-in;
+    }
+
+    @supports (backdrop-filter: blur(1rem)) {
+        .primary-navigation {
+            background: hsl(0 0% 100% / 0.1);
+            backdrop-filter: blur(1rem);
+        }
     }
 
     .primary-navigation[data-visible="true"] {
