@@ -176,6 +176,10 @@ hr {
     justify-content: center;
 }
 
+.contact-list i {
+    color: white;
+}
+
 .contact i {
     font-size: 30px;
     margin-bottom: 10px;
