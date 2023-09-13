@@ -147,6 +147,14 @@ hr {
     max-width: 35ch;
 }
 
+.card3 {
+    color: white;
+    background-image: url('img/contacts.jpg');
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+}
+
 .card-content {
     padding: 1.5em;
     background: linear-gradient(
@@ -160,11 +168,11 @@ hr {
     margin-top: 30px;
 }
 
-.projects {
+.row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contact {
@@ -272,7 +280,11 @@ footer {
 
     .projects {
         padding: 0 2.5rem 0 2.5rem;
+    }
+
+    .row {
         flex-direction: column;
+        margin-bottom: 0px;
     }
 
     .card-title {
@@ -284,8 +296,9 @@ footer {
     }
 
     .card1,
-    .card2 {
+    .card2,
+    .card3 {
         font-size: 16px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
