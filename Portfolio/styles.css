@@ -16,6 +16,11 @@ body {
     font-family: 'Kanit', sans-serif;
 }
 
+.dummy1,
+.dummy2 {
+    height: 10vh;
+}
+
 .primary-header {
     align-items: center;
     justify-content: space-between;
