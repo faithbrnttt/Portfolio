@@ -295,6 +295,7 @@ hr {
 
 .contact {
     color: white;
+    text-align: center;
 }
 
 .contact-list {
@@ -310,6 +311,7 @@ hr {
     font-size: 30px;
     margin-bottom: 10px;
     padding: 1rem;
+    
 }
 
 .contact .bxs-envelope {
@@ -413,6 +415,8 @@ footer {
     .card-body {
         margin-top: 10px;
     }
+
+   
 
     .card1,
     .card2,
