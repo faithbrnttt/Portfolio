@@ -18,7 +18,7 @@ body {
 
 .dummy1,
 .dummy2 {
-    height: 10vh;
+    height: 5vh;
 }
 
 .primary-header {
@@ -36,13 +36,19 @@ body {
 
 .design {
     height: 10vh;
+	
 }
 
-.about,
 .projects,
 .contact {
     padding: 0 8rem;
+	
 }
+
+.about {
+	padding: 0 8rem;
+}
+
 
 .about h1 {
     font-weight: 700;
@@ -76,6 +82,7 @@ body {
 .intro {
     margin: 1.5rem;
     color: white;
+	width: 50%;
 }
 .primary-navigation a > span {
     font-weight: 700;
@@ -142,7 +149,6 @@ hr {
     background-image: url('img/keypad.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
    
 }
 
@@ -152,7 +158,7 @@ hr {
     background-image: url('img/editor.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+ 
     
 }
 
@@ -162,8 +168,7 @@ hr {
     background-image: url('img/contacts.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
-    
+
 }
 
 .card4 {
@@ -172,8 +177,7 @@ hr {
     background-image: url('img/weather.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
-    
+
 }
 
 .card5 {
@@ -182,8 +186,7 @@ hr {
     background-image: url('img/trafficlight.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
-    
+
 }
 
 .card6 {
@@ -192,8 +195,7 @@ hr {
     background-image: url('img/smarthome.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
-    
+  
 }
 
 .card7 {
@@ -202,7 +204,7 @@ hr {
     background-image: url('img/stocks.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+  
 }
 
 .card8 {
@@ -211,7 +213,7 @@ hr {
     background-image: url('img/networking.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+ 
 }  
 
 .card9 {
@@ -220,7 +222,7 @@ hr {
     background-image: url('img/networking2.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+ 
 }  
 
 .card10 {
@@ -229,7 +231,7 @@ hr {
     background-image: url('img/physics.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+
 }  
 
 .card11 {
@@ -238,7 +240,7 @@ hr {
     background-image: url('img/security.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+  
 } 
 
 .card12 {
@@ -247,7 +249,7 @@ hr {
     background-image: url('img/musicplayer.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+ 
 } 
 
 .card13 {
@@ -256,7 +258,7 @@ hr {
     background-image: url('img/payroll.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+   
 } 
 
 .card14 {
@@ -265,8 +267,36 @@ hr {
     background-image: url('img/landscape.jpg');
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 25ch;
+   
 } 
+
+.card15 {
+    color: white;
+    font-size: 18px;
+    background-image: url('img/datastructures.jpg');
+    background-size: cover;
+    padding: 10rem 0 0;
+   
+} 
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11,
+.card12,
+.card13,
+.card14,
+.card15 {
+	max-width: 400px;
+	border-radius: 25px;
+}
 
 .card-content {
     padding: 1.5em;
@@ -279,6 +309,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+	border-radius: 25px;
 }
 
 .card-body {
@@ -296,6 +327,7 @@ hr {
 .contact {
     color: white;
     text-align: center;
+	margin-bottom: 50px;
 }
 
 .contact-list {
@@ -327,6 +359,7 @@ footer {
     color: #FF5733;
     font-size: 36px;
     margin-bottom: 30px;
+	margin-left: 12px;
 }
 
 
@@ -388,19 +421,32 @@ footer {
 
     .about,
     .contact {
-        padding: 0 1rem 0 1rem;
+		text-align: center;
+		padding: 0 2rem;
     }
+	
+	.about {
+		margin-right: 50px;
+	}
+	
+	.about h1 {
+		margin-left: 50px;
+	}
 
     .contact h1 {
         padding: 0 1rem;
     }
 
+	
     .intro {
         font-size: 18px;
+		width: 100%;
+	
     }
 
     .projects {
-        padding: 0 2.5rem 0 3.5rem;
+		width: 100%;
+        padding: 3.5rem;
     }
 
     .row {
@@ -416,7 +462,8 @@ footer {
         margin-top: 10px;
     }
 
-   
+	
+	
 
     .card1,
     .card2,
@@ -431,8 +478,14 @@ footer {
     .card11,
     .card12,
     .card13,
-    .card14 {
+    .card14,
+    .card15 {
         font-size: 16px;
         margin-bottom: 30px;
+		max-width: 100%;
+    }
+
+    .dummy1 {
+        height: 0vh;
     }
 }
