@@ -147,8 +147,8 @@ hr {
     color: white;
     font-size: 18px;
     background-size: cover;
-    padding: 8rem 0 0;
-    max-width: 40ch;
+    padding: 7.5rem 0 0;
+    max-width: 35ch;
     border-radius: 10px;
 }
 
@@ -344,6 +344,16 @@ footer {
     .row > div {
         flex: 1 1 calc(50% - 1rem);
         margin-bottom: 1rem;
+    }
+
+    .about,
+    .contact {
+        text-align: center;
+
+    }
+
+    .intro {
+        font-size: 24px;
     }
 }
 
